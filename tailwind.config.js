@@ -176,6 +176,11 @@ module.exports = {
   important: "#__next",
   theme: {
     /* Mantineと一致させる: https://mantine.dev/theming/responsive */
+    colors: {
+      // 'カラー名': 'カラーコード'
+      "pink-6": "#E64980",
+      white: "#FFFFFF",
+    },
     screens: {
       xs: "576px",
       sm: "768px",
