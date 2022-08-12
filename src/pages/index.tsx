@@ -1,16 +1,22 @@
 import type { NextPage } from "next";
 import { Button, useMediaQuery, useViewportSize } from "src/lib/mantine";
-import { FaTwitter, FaFacebook, FaRss } from "react-icons/fa";
-import { TbMoon } from "react-icons/tb";
-import { Header } from "src/components/header";
-import { Title } from "src/components/title";
-import { Blog } from "src/components/blog";
+import { Header } from "src/components/Header";
+import { Title } from "src/components/Title";
+import { Blog } from "src/components/Blog";
+import { Divider, Grid, Image } from "@mantine/core";
+import { Portfolio } from "src/components/Portfolio";
+import { GitTwitter } from "src/components/GitTwitter";
+import { Footer } from "src/components/Footer";
+
 const Home: NextPage = () => {
   return (
     <div className="w-[1440px] px-[224px]">
       <Header />
       <Title />
       <Blog />
+      <Portfolio />
+      <GitTwitter />
+      <Footer />
     </div>
   );
 };
