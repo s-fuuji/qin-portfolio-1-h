@@ -2,7 +2,7 @@ import { Button } from "@mantine/core";
 
 export const Blog = () => {
   return (
-    <div className="mt-[80px]px-[10px]">
+    <div className="mt-[80px] px-[10px]">
       <ul className="flex flex-col gap-[24px]">
         <li className="pb-[20px] text-[26px]">Blog</li>
         {[...Array(5)].map(() => {
