@@ -10,8 +10,7 @@ import { Footer } from "src/components/Footer";
 
 const Home: NextPage = () => {
   return (
-    <div className="w-[1440px] px-[224px]">
-      <Header />
+    <div className="w-full">
       <Title />
       <Blog />
       <Portfolio />
