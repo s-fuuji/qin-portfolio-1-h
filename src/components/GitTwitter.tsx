@@ -1,4 +1,5 @@
-import { Button, MediaQuery } from "@mantine/core";
+import { Button, Container, MediaQuery } from "@mantine/core";
+import { BasicButton } from "src/components/Layout/BasicButton";
 
 export const GitTwitter = () => {
   return (
@@ -6,7 +7,7 @@ export const GitTwitter = () => {
       largerThan="sm"
       styles={{ display: "flex", marginTop: "101px" }}
     >
-      <div>
+      <Container className="px-[16px]">
         <MediaQuery
           largerThan="lg"
           styles={{
@@ -16,13 +17,11 @@ export const GitTwitter = () => {
             width: "50%",
           }}
         >
-          <ul>
+          <ul className="mt-[61px]">
             <li className="pb-[20px] text-[26px]">GitHub</li>
             <li>test</li>
             <li className="text-center">
-              <Button color="dark" radius="xl">
-                View On GitHub
-              </Button>
+              <BasicButton buttonText={"View On GitHub"} />
             </li>
           </ul>
         </MediaQuery>
@@ -35,17 +34,15 @@ export const GitTwitter = () => {
             width: "50%",
           }}
         >
-          <ul className="flex flex-col gap-[24px]">
+          <ul className="mt-[61px]">
             <li className="pb-[20px] text-[26px]">Twitter</li>
             <li>test</li>
             <li className="text-center">
-              <Button color="dark" radius="xl">
-                View On Twitter
-              </Button>
+              <BasicButton buttonText={"View On Twitter"} />
             </li>
           </ul>
         </MediaQuery>
-      </div>
+      </Container>
     </MediaQuery>
   );
 };

@@ -1,12 +1,10 @@
-import { Button, MediaQuery } from "@mantine/core";
+import { Button, Container, MediaQuery } from "@mantine/core";
+import { BasicButton } from "src/components/Layout/BasicButton";
 
 export const Blog = () => {
   return (
-    <MediaQuery
-      largerThan="sm"
-      styles={{ marginTop: "80px", padding: "0 10px" }}
-    >
-      <div>
+    <MediaQuery largerThan="sm" styles={{ marginTop: "80px" }}>
+      <Container className="mt-[40px] px-[16px]">
         <ul className="flex flex-col gap-[24px]">
           <li className="pb-[20px] text-[26px]">Blog</li>
           {[...Array(5)].map(() => {
@@ -24,12 +22,10 @@ export const Blog = () => {
             );
           })}
           <li className="text-center">
-            <Button color="dark" radius="xl">
-              View All
-            </Button>
+            <BasicButton buttonText={"View All"} />
           </li>
         </ul>
-      </div>
+      </Container>
     </MediaQuery>
   );
 };
