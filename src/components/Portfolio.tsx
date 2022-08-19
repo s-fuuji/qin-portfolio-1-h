@@ -1,4 +1,4 @@
-import { Button, Container, Grid, Image, MediaQuery } from "@mantine/core";
+import { Container, Grid, Image, MediaQuery } from "@mantine/core";
 import { BasicButton } from "src/components/Layout/BasicButton";
 
 export const Portfolio = () => {
@@ -72,7 +72,7 @@ export const Portfolio = () => {
             </Grid>
           </li>
           <li className="text-center">
-            <BasicButton buttonText={"View All"} />
+            <BasicButton href="portfolio" buttonText="View All" />
           </li>
         </ul>
       </Container>

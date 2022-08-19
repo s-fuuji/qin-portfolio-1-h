@@ -1,4 +1,4 @@
-import { Button, Container, MediaQuery } from "@mantine/core";
+import { Container, MediaQuery } from "@mantine/core";
 import { BasicButton } from "src/components/Layout/BasicButton";
 
 export const GitTwitter = () => {
@@ -21,7 +21,7 @@ export const GitTwitter = () => {
             <li className="pb-[20px] text-[26px]">GitHub</li>
             <li>test</li>
             <li className="text-center">
-              <BasicButton buttonText={"View On GitHub"} />
+              <BasicButton href="/" buttonText="View On GitHub" />
             </li>
           </ul>
         </MediaQuery>
@@ -38,7 +38,7 @@ export const GitTwitter = () => {
             <li className="pb-[20px] text-[26px]">Twitter</li>
             <li>test</li>
             <li className="text-center">
-              <BasicButton buttonText={"View On Twitter"} />
+              <BasicButton href="/" buttonText="View On Twitter" />
             </li>
           </ul>
         </MediaQuery>

@@ -3,7 +3,7 @@ import { FaFacebook, FaRss, FaTwitter } from "react-icons/fa";
 
 export const Title = () => {
   return (
-    <div className="w-full bg-pink-6 pt-[53.5px] pb-[63.5px] text-white">
+    <div className="w-full bg-pink-6 pt-[53.5px] pb-[63.5px] text-white sm:pb-[85.5px] sm:pt-[85.5px]">
       <MediaQuery
         largerThan="sm"
         styles={{

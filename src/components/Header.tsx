@@ -1,6 +1,5 @@
 import { Burger, Container, Drawer, Group, MediaQuery } from "@mantine/core";
 import { TbMoon } from "react-icons/tb";
-import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 import Link from "next/link";
 export const Header = () => {
@@ -17,7 +16,10 @@ export const Header = () => {
             title={title}
           />
         </MediaQuery>
-        <p className="text-[18px]">Shimabu IT University</p>
+        <Link href="/">
+          <a className="text-[18px]">Shimabu IT University</a>
+        </Link>
+
         <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
           <div>
             <ul className="flex items-center gap-[16px]">
